@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My School | Student Learning Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand"><span class="logo">🏫</span><div><strong>MY SCHOOL</strong><small>Student Learning Portal</small></div></div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#classes">Classes</a><a href="#notes">Notes</a><a href="#notices">Notices</a><a href="staff.html">Our Staff</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div><span class="tag">WELCOME STUDENTS</span><h1>Learn. Explore. <span>Achieve.</span></h1><p>A simple online learning space for school information, study materials, notices, question banks and useful resources.</p><div class="actions"><a class="btn primary" href="#classes">Explore Classes</a><a class="btn light" href="#notices">View Notices</a></div></div>
+    <div class="hero-card"><div class="hero-icon">🎓</div><h3>Student Corner</h3><p>Notes • Questions • PDFs • Announcements</p></div>
+  </div>
+</section>
+
+<section id="about" class="section"><div class="container"><div class="section-head"><span>ABOUT</span><h2>About Our School</h2></div><div class="about-grid"><div class="card"><h3>🏫 School Information</h3><p>Welcome to our school website. Replace this text with your school's history, mission, facilities and other important information.</p></div><div class="card"><h3>🎯 Our Goal</h3><p>To provide students with easy access to learning resources and important school information anytime.</p></div><div class="card"><h3>👨‍🏫 Faculty</h3><p>Add teacher names, subjects and short profiles here whenever you are ready.</p></div></div></div></section>
+
+<section id="classes" class="section alt"><div class="container"><div class="section-head"><span>ACADEMICS</span><h2>Classes & Subjects</h2></div><div class="class-grid">
+  <div class="class-card"><b>Class 9</b><p>Science • Maths • Social Science • English • Hindi</p><a href="#notes">Study Materials →</a></div>
+  <div class="class-card"><b>Class 10</b><p>Science • Maths • Social Science • English • Hindi</p><a href="#notes">Study Materials →</a></div>
+  <div class="class-card"><b>Class 11</b><p>Physics • Chemistry • Maths • Computer Science</p><a href="#notes">Study Materials →</a></div>
+  <div class="class-card"><b>Class 12</b><p>Physics • Chemistry • Maths • Computer Science</p><a href="#notes">Study Materials →</a></div>
+</div></div></section>
+
+<section id="notes" class="section"><div class="container"><div class="section-head"><span>LEARNING</span><h2>Notes & Study Materials</h2></div><div class="resource-grid">
+  <article class="resource"><div class="resource-icon">📘</div><h3>Class Notes</h3><p>Add chapter-wise notes and learning material.</p><button onclick="showMessage('Add your PDF link in the HTML file to enable downloads.')">Open</button></article>
+  <article class="resource"><div class="resource-icon">📝</div><h3>Question Bank</h3><p>Very short, short and long answer questions.</p><button onclick="showMessage('Add your question-bank PDF or page link here.')">Open</button></article>
+  <article class="resource"><div class="resource-icon">📥</div><h3>PDF Downloads</h3><p>Make worksheets, notes and assignments available.</p><button onclick="showMessage('Place PDFs inside the files folder and add links here.')">Downloads</button></article>
+</div></div></section>
+
+<section id="notices" class="section alt"><div class="container"><div class="section-head"><span>UPDATES</span><h2>Notice Board</h2></div><div class="notice-list">
+  <div class="notice"><span class="date">01<br><small>OCT</small></span><div><h3>School Notice</h3><p>Replace this sample notice with your latest announcement.</p></div></div>
+  <div class="notice"><span class="date">15<br><small>OCT</small></span><div><h3>Examination Information</h3><p>Add examination dates, instructions or syllabus updates here.</p></div></div>
+  <div class="notice"><span class="date">20<br><small>OCT</small></span><div><h3>Holiday / Event</h3><p>Add important school events and holiday information.</p></div></div>
+</div></div></section>
+
+<section id="gallery" class="section"><div class="container"><div class="section-head"><span>MEMORIES</span><h2>School Gallery</h2></div><div class="gallery"><div>📸<small>School Building</small></div><div>🎉<small>School Event</small></div><div>🏆<small>Achievement</small></div><div>🌳<small>Campus</small></div></div><p class="hint">Replace these placeholders with your own school photographs.</p></div></section>
+
+<section id="contact" class="section contact"><div class="container contact-grid"><div><div class="section-head"><span>CONTACT</span><h2>Get in Touch</h2></div><p>🏫 <strong>School:</strong> Your School Name</p><p>📍 <strong>Address:</strong> Your school address, District, State</p><p>📞 <strong>Phone:</strong> +91-XXXXXXXXXX</p><p>✉️ <strong>Email:</strong> school@example.com</p></div><div class="card"><h3>Principal's Message</h3><p>“Education is not only about marks; it is about developing knowledge, confidence and good values.”</p><p class="signature">— Principal</p></div></div></section>
+</main>
+
+<footer><div class="container footer"><div><strong>🏫 MY SCHOOL</strong><p>Student Learning Portal</p></div><p>© <span id="year"></span> My School. All rights reserved.</p></div></footer>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
